@@ -1,17 +1,22 @@
+import asyncio
 from OpenFile import OpenFile
 from Model.Student import Student
-import asyncio
 from Errors.errors import DataValueError
+from MyLogger import MyLogger
+# from mainStudents import logger
 
 class ParseFile:
     def __enter__(self):
         with OpenFile('students.csv') as of:
             for row in of:
+                # logger.info('Start file')
                 try:
                     st = Student(*row)
                     yield asyncio.run(self.checkGrades(st))
                 except DataValueError as e:
-                    print(e) 
+                    d = {'clientip': 'Task Student Class:'}
+                    MyLogger.logger.warning(e, extra = d)
+                    # print(e) 
 
     
     def __exit__(self, *args, **kwargs):
