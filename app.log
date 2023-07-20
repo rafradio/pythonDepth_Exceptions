@@ -1,4 +1,5 @@
-Task Student Class: Ошибка в оценке. Объект с id = '1' оценка value["grade"] = 100 д.б. от 2 до 5
+Task Student Class: taskStudent Start file
+Task Student Class: taskStudent Ошибка в оценке. Объект с id = '1' оценка value["grade"] = 100 д.б. от 2 до 5
 
-Task Student Class: Ошибка в ФИО. Объект с id = '2': значение "наташа" должно начинаться с заглавной буквы
+Task Student Class: taskStudent Ошибка в ФИО. Объект с id = '2': значение "наташа" должно начинаться с заглавной буквы
 
