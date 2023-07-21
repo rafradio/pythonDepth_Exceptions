@@ -7,6 +7,7 @@ def main():
     # logging.basicConfig(format=FORMAT)
     # logger = logging.getLogger('taskStudent')
     # myLogger = MyLogger()
+    MyLogger.configure()
     d = {'clientip': 'Task Student Class:'}
     MyLogger.logger.info('Start file', extra = d)
     students = []
